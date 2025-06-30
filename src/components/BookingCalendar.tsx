@@ -4,8 +4,22 @@ import React from "react";
 const BookingCalendar = () => {
   return (
     <section id="contact" className="bg-[#f7e7ce] w-full py-10 px-5 md:px-20">
+      <style>
+        {`
+          
+            @media(min-width:1910px){
+           
+        .heading_main{
+                padding-left: 5rem;
+        padding-right: 5rem;
+        margin: auto;
+        max-width: 1536px;
+        }
+            }
+        `}
+      </style>
       {/* Heading: smaller on mobile, large on md+ */}
-      <h2 className="font-cabrito text-[#946847] text-[2.4rem] md:text-[7.5rem] leading-tight md:leading-tight">
+      <h2 className="font-cabrito text-[#946847] text-[2.4rem] md:text-[7.5rem] leading-tight md:leading-tight heading_main">
         Secure Your Spot
       </h2>
 
