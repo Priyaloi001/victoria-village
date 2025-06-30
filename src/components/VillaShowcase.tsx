@@ -76,14 +76,35 @@ const VillaShowcase = () => {
 
   return (
     <section id="villas" className="section bg-white relative overflow-hidden">
+       <style>
+        {`
+          
+            @media(min-width:2300px){
+            .villas-inner{
+            max-width: 1536px;
+            padding-left: 5rem;
+        padding-right: 5rem;
+        margin:auto;
+            }
+        .villas-inner h1{
+        padding-left: 0;
+        padding-right: 0;
+        }
+        .villas-inner .content-div{
+        display:block;
+        }
+            }
+        `}
+      </style>
+<div className="villas-inner">
       <motion.h1
         variants={itemVariants}
-        className="section-title px-4 md:px-[4.8rem] font-cabrito text-left text-[3rem] md:text-[7rem] leading-[1.2]"
+        className="section-title px-4 md:px-[4.8rem] 3xl:px-0 font-cabrito text-left text-[3rem] md:text-[7rem] leading-[1.2]"
       >
         Experience the Villas
       </motion.h1>
 
-      <div className="container-custom relative z-10 md:ms-0 ">
+      <div className="container-custom relative z-10 md:ms-0 2xl:px-0">
         <motion.div
           ref={ref}
           variants={containerVariants}
@@ -112,7 +133,7 @@ const VillaShowcase = () => {
             {/* Desktop Layout */}
             {!isMobile && (
               <div className=" rounded-lg p-2 sm:p-3 md:p-0 ">
-                <div className=" rounded-lg p-6 md:p-8 flex items-center justify-center h-full">
+                <div className="content-div rounded-lg pt-6 md:pt-8 flex items-center justify-center h-full 3xl:block">
                   <p className="font-cabrito text-gray-800 text-lg font-light leading-tight text-left max-w-md mx-0 me-6">
                     Immerse yourself in the villa through our interactive 3D
                     experience.
@@ -206,6 +227,7 @@ const VillaShowcase = () => {
             )}
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

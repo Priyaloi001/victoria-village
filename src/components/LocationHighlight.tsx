@@ -22,12 +22,18 @@ const LocationHighlight = () => {
               line-height: 37px !important;
             }
           }
+            @media(min-width:2300px){
+            .location_content{
+            padding-inline-start: 42rem;
+            margin-inline-end: 38rem;
+            }
+            }
         `}
       </style>
 
       <div className="overflow-visible relative h-[auto] md:h-[60rem] bg-[#F7E7CE]">
-        <div className="grid grid-cols-1 md:grid-cols-[62fr_38fr] gap-12 w-[100%]">
-          <div className="px-5 md:px-[5rem]">
+        <div className="grid grid-cols-1 md:grid-cols-[62fr_38fr] gap-12 w-[88vw] mx-auto">
+          <div className="p x-5 md:p x-[5rem]">
             <h2
               className="section-title font-cabrito text-[#946846] text-3xl md:text-5xl mt-6 md:mt-10 mobile-line-height-reduced"
               style={{ lineHeight: "60px" }}
@@ -76,7 +82,7 @@ const LocationHighlight = () => {
             <div className="hidden md:block absolute top-[36rem] bg-white h-[50rem] w-[100%] left-0 z-5"></div>
 
             {/* Desktop Paragraph */}
-            <p className="hidden md:block absolute text-lg font-light text-right mb-2 top-[42rem] ps-[24rem] me-[27rem] font-cabrito text-[#946846] leading-[1.4]">
+            <p className="hidden md:block absolute text-lg font-light text-right mb-2 top-[42rem] ps-[24rem] me-[27rem] font-cabrito text-[#946846] leading-[1.4] location_content">
               Once a hidden gem, Koh Samui is now a globally recognised
               destination — beautiful, well-connected, and built for living.
               With up to 20% property appreciation projected upon completion and

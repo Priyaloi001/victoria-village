@@ -229,6 +229,14 @@ export default function AmenitiesDisplay() {
             height: 8px !important;
           }
         }
+          @media(min-width:2300px){
+          .amenities_title{
+          padding-left: 5rem;
+        padding-right: 5rem;
+        margin:auto;
+        max-width: 1536px;
+          }
+          }
       `}</style>
 
       {/* Fullscreen Viewer */}
@@ -320,10 +328,10 @@ export default function AmenitiesDisplay() {
 
         {/* Title and Menu */}
         <div className="text-start mb-2">
-          <h2 className="ms-[5.4rem] ps-2 text-[#F1E7D0] text-[5rem] font-cabrito mb-6 header-title">
+          <h2 className="ms-[5.4rem] ps-2 text-[#F1E7D0] text-[5rem] font-cabrito mb-6 header-title amenities_title">
             Amenities
           </h2>
-          <div className="flex justify-center gap-12 flex-wrap text-lg amenity-button-container">
+          <div className="flex justify-center gap-12 flex-wrap text-lg amenity-button-container ">
             {amenities.map((item, idx) => (
               <button
                 key={idx}
