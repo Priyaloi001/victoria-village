@@ -44,13 +44,13 @@ const amenities = [
     imageLarge: "/assets/amenities/six.jpg",
     imageSmall: "/assets/amenities/six.jpg",
   },
-  // {
-  //   title: "On-site Parking",
-  //   description:
-  //     "Drive in with ease. Each villa includes designated on-site parking spaces, complete with EV charging stations, wide turning radii, and shaded bays—designed for convenience, sustainability, and modern lifestyles.",
-  //   imageLarge: "/assets/amenities/13.png",
-  //   imageSmall: "/assets/amenities/14.png",
-  // },
+  {
+    title: "On-site Parking",
+    description:
+      "Drive in with ease. Each villa includes designated on-site parking spaces, complete with EV charging stations, wide turning radii, and shaded bays—designed for convenience, sustainability, and modern lifestyles.",
+    imageLarge: "/assets/amenities/seven.png",
+    imageSmall: "/assets/amenities/seven.png",
+  },
 ];
 
 export default function AmenitiesDisplay() {
