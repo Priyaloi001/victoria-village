@@ -22,7 +22,7 @@ const LocationHighlight = () => {
               line-height: 37px !important;
             }
           }
-            @media(min-width:2300px){
+            @media(min-width:1910px){
             .location_content{
             padding-inline-start: 42rem;
             margin-inline-end: 38rem;

@@ -79,7 +79,7 @@ const VillaShowcase = () => {
        <style>
         {`
           
-            @media(min-width:2300px){
+            @media(min-width:1910px){
             .villas-inner{
             max-width: 1536px;
             padding-left: 5rem;

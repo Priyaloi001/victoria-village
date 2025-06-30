@@ -229,7 +229,7 @@ export default function AmenitiesDisplay() {
             height: 8px !important;
           }
         }
-          @media(min-width:2300px){
+          @media(min-width:1910px){
           .amenities_title{
           padding-left: 5rem;
         padding-right: 5rem;
