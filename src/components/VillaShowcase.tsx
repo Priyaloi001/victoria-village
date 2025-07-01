@@ -101,7 +101,7 @@ const VillaShowcase = () => {
         variants={itemVariants}
         className="section-title px-4 md:px-[4.8rem] 3xl:px-0 font-cabrito text-left text-[3rem] md:text-[7rem] leading-[1.2]"
       >
-        Experience the Villas
+        Experience the Villas fff
       </motion.h1>
 
       <div className="container-custom relative z-10 md:ms-0 2xl:px-0">
