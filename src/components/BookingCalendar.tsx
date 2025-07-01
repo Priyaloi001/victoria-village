@@ -9,21 +9,26 @@ const BookingCalendar = () => {
           
             @media(min-width:1910px){
            
-        .heading_main{
+        .heading{
                 padding-left: 5rem;
         padding-right: 5rem;
         margin: auto;
         max-width: 1536px;
         }
+        .content_area{
+            padding-left: 5rem;
+    padding-right: 5rem;
+    max-width: 1536px;
+        }
             }
         `}
       </style>
       {/* Heading: smaller on mobile, large on md+ */}
-      <h2 className="font-cabrito text-[#946847] text-[2.4rem] md:text-[7.5rem] leading-tight md:leading-tight heading_main">
+      <h2 className="font-cabrito text-[#946847] text-[2.4rem] md:text-[7.5rem] leading-tight md:leading-tight heading">
         Secure Your Spot
       </h2>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start mt-0 md:mt-14">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start mt-0 md:mt-14 content_area">
         {/* LEFT: Text Content */}
         <div className="flex flex-col gap-6 md:gap-8">
           <p className="md:ms-2 font-cabrito text-[#946847] text-lg font-light leading-tight max-w-full md:max-w-[27rem] mt-10 md:mt-16">
