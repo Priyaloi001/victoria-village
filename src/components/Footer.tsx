@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white">
       <div className="container-custom py-16">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div className="md:col-span-1">
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="md:col-span-3">
             <div className="flex items-center gap-2 text-white mb-4">
               <PalmTree size={24} />
               <span className="font-serif font-semibold text-xl">Victoria Villas</span>

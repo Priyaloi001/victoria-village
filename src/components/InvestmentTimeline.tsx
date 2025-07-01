@@ -53,9 +53,9 @@ const InvestmentTimeline = () => {
   return (
     <section
       id="investment"
-      className="section bg-[#ffffff] relative overflow-hidden pt-10 mt-64 mb-0 pb-0"
+      className="section bg-[#ffffff] relative overflow-hidden pt-10 mt-64 mb-0 pb-0 "
     >
-      <div className="container-custom relative z-10 mt-4 md:mt-0 mb-0 pb-0 md:px-20">
+      <div className="container-custom relative z-10 mt-4 md:mt-0 mb-0 pb-0 px-0  xl:px-20 w-[88vw] mx-auto xl:w-[100vw]">
         <motion.div
           ref={ref}
           variants={containerVariants}
@@ -67,9 +67,10 @@ const InvestmentTimeline = () => {
             className="
               text-left 
               text-[#946847] 
-              text-[2.3rem]       /* mobile base size */
-              sm:text-[6rem]    /* tablet and above */
-              md:text-[7rem]    /* desktop and larger */
+              text-[2.3rem]  
+              md:text-[3rem]      /* mobile base size */
+              lg:text-[5rem]    /* tablet and above */
+              xl:text-[7rem]    /* desktop and larger */
               leading-[1.1] 
               font-cabrito 
               mb-4
@@ -100,16 +101,16 @@ const InvestmentTimeline = () => {
               md:ms-5
               me-10 
               mx-auto 
-              h-[16rem] 
+              h-[100%] 
               max-[639px]:w-[80%] 
-              max-[639px]:h-auto
+              max-[639px]:h-[100%]
             "
           >
             {/* Bottommost layer */}
-            <div className="absolute top-6 left-6 w-full h-full rounded-[2rem] bg-[#e4d2c3]/60 z-0 max-[639px]:top-3 max-[639px]:left-2 max-[639px]:rounded-2xl"></div>
+            <div className="absolute top-6 left-6 w-full h-[100%] rounded-[2rem] bg-[#e4d2c3]/60 z-0 max-[639px]:top-3 max-[639px]:left-2 max-[639px]:rounded-2xl"></div>
 
             {/* Middle layer */}
-            <div className="absolute top-3 left-3 w-full h-full rounded-[2rem] bg-[#d6bfae] z-10 max-[639px]:top-1 max-[639px]:left-1 max-[639px]:rounded-2xl"></div>
+            <div className="absolute top-3 left-3 w-full h-[100%] rounded-[2rem] bg-[#d6bfae] z-10 max-[639px]:top-1 max-[639px]:left-1 max-[639px]:rounded-2xl"></div>
 
             {/* Top card */}
             <motion.div
@@ -118,7 +119,7 @@ const InvestmentTimeline = () => {
               initial="hidden"
               animate="visible"
               exit="hidden"
-              className="relative bg-[#946847] text-white px-6 py-2 rounded-[2rem] shadow-xl h-full z-20
+              className="relative bg-[#946847] text-white px-6 py-2 rounded-[2rem] shadow-xl h-[100%] z-20
     max-[639px]:rounded-2xl
     max-[639px]:px-4
     max-[639px]:py-4

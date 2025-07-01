@@ -95,10 +95,10 @@ const LocationHighlight = () => {
       id="location"
       className="relative bg-[#00332D] text-white py-20 mt-0 pt-4 pb-0 md:pb-4 mb-0"
     >
-      <div className="container mx-auto px-6 md:px-16 max-w-screen-xl md:mb-2 md:pb-36 sm:pb-0 sm:mb-0">
+      <div className="container mx-auto px-6 md:px-16 max-w-screen-xl md:mb-2 xl:pb-36 sm:pb-0 sm:mb-0">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="order-1 md:order-2 text-right mb-0 pb-0">
-            <h2 className="text-4xl md:text-5xl font-cabrito text-[#F1E7D0] leading-tight mb-4">
+            <h2 className="text-4xl lg:text-5xl font-cabrito text-[#F1E7D0] leading-tight mb-4">
               Close to Everything. <br />
               Far from Ordinary.
             </h2>
@@ -114,7 +114,7 @@ const LocationHighlight = () => {
           </div>
 
           {/* Map */}
-          <div className="order-2 md:order-1 relative w-full md:w-1/2 h-[400px] rounded-xl overflow-hidden z-10 mb-4 ms-0 md:ms-10 mb-14 md:mb-0">
+          <div className="order-2 md:order-1 relative w-full md:w-1/2 h-[400px] rounded-xl overflow-hidden z-10 mb-4 ms-0 lg:ms-10 mb-14 md:mb-0">
             <MapContainer
               center={[9.477, 100.052]}
               zoom={13.5}
@@ -153,8 +153,8 @@ const LocationHighlight = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="relative sm:absolute bottom-0 sm:bottom-[-16em] z-50 mx-4 sm:mx-20 mt-0 pt-0 h-[6rem] sm:h-[22rem]">
-        <div className="hidden sm:grid grid-cols-6 gap-6 px-0">
+      <div className="relative xl:absolute bottom-0 xl:bottom-[-16em] z-50 mx-4 xl:mx-20 mt-0 pt-0 h-[6rem] xl:h-[22rem]">
+        <div className="hidden xl:grid grid-cols-6 gap-6 px-0">
           {locationData.map((item, index) => (
             <div
               key={index}
@@ -180,7 +180,7 @@ const LocationHighlight = () => {
           ))}
         </div>
 
-        <div className="sm:hidden ms-8 absolute bottom-[-2em] w-[80%] h-full">
+        <div className="xl:hidden left-1/2 transform -translate-x-1/2  absolute bottom-[-2em] w-[80%] h-full">
           {/* Background shadow card for stacked look */}
           <div
             className="rounded-2xl border border-white/10 backdrop-blur-md p-3 h-[20rem] w-full absolute top-2 left-2 z-10"

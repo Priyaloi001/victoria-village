@@ -328,7 +328,7 @@ export default function AmenitiesDisplay() {
 
         {/* Title and Menu */}
         <div className="text-start mb-2">
-          <h2 className="ms-[5.4rem] ps-2 text-[#F1E7D0] text-[5rem] font-cabrito mb-6 header-title amenities_title">
+          <h2 className="ms-[5.4rem] ps-2 text-[#F1E7D0] text-[4rem] lg:text-[5rem] font-cabrito mb-6 header-title amenities_title">
             Amenities
           </h2>
           <div className="flex justify-center gap-12 flex-wrap text-lg amenity-button-container ">
@@ -348,7 +348,7 @@ export default function AmenitiesDisplay() {
         </div>
 
         {/* Content Block */}
-        <div className="max-w-[100%] mt-6 pt-0 mx-auto grid grid-cols-1 sm:grid-cols-[0.8fr_1fr_1fr] gap-6 px-4 sm:px-8 md:px-16 items-start content-grid ">
+        <div className="max-w-[100%] mt-6 pt-0 mx-auto grid grid-cols-1 sm:grid-cols-[0.8fr_1fr_1fr] gap-6 px-4 sm:px-8 lg:px-16 items-start content-grid ">
           {/* Mobile-only Description */}
           <div className="sm:hidden col-span-full text-lg font-light font-cabrito leading-tight px-1 text-[#F1E7D0]">
             {selectedAmenity.description}

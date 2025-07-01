@@ -32,7 +32,7 @@ const LocationHighlight = () => {
       </style>
 
       <div className="overflow-visible relative h-[auto] md:h-[60rem] bg-[#F7E7CE]">
-        <div className="grid grid-cols-1 md:grid-cols-[62fr_38fr] gap-12 w-[88vw] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-[62fr_38fr] gap-12 w-[88vw] mx-auto">
           <div className="p x-5 md:p x-[5rem]">
             <h2
               className="section-title font-cabrito text-[#946846] text-3xl md:text-5xl mt-6 md:mt-10 mobile-line-height-reduced"
@@ -53,7 +53,7 @@ const LocationHighlight = () => {
             </p>
 
             {/* 👉 Mobile image placeholder between paragraphs */}
-            <div className="block md:hidden w-full max-w-md mx-auto mb-1">
+            <div className="block lg:hidden w-full max-w-md mx-auto mb-1">
               <div className="relative w-full pt-[80%] rounded-xl shadow-lg overflow-hidden">
                 <img
                   src="https://cdn.cosmos.so/85e9c666-aaa3-416d-b562-d8e01c04dc36?format=jpeg"
@@ -66,7 +66,7 @@ const LocationHighlight = () => {
 
           <div className="flex justify-end items-start">
             {/* Desktop Visual Layers */}
-            <div className="hidden md:block absolute right-0 w-[25rem]">
+            <div className="hidden lg:block absolute right-0 w-[25rem]">
               <img
                 src="https://cdn.cosmos.so/28480f44-498b-4db0-9d48-0cffef30e580?format=jpeg"
                 alt="Right Parallax Image"
@@ -79,10 +79,10 @@ const LocationHighlight = () => {
               <div className="w-full h-auto object-cover shadow-xl relative z-10 bg-black" />
             </div>
 
-            <div className="hidden md:block absolute top-[36rem] bg-white h-[50rem] w-[100%] left-0 z-5"></div>
+            <div className="hidden lg:block absolute top-[36rem] bg-white h-[50rem] w-[100%] left-0 z-5"></div>
 
             {/* Desktop Paragraph */}
-            <p className="hidden md:block absolute text-lg font-light text-right mb-2 top-[42rem] ps-[24rem] me-[27rem] font-cabrito text-[#946846] leading-[1.4] location_content">
+            <p className="hidden lg:block absolute text-lg font-light text-right mb-2 top-[42rem] xl:ps-[24rem] me-[27rem] font-cabrito text-[#946846] leading-[1.4] location_content">
               Once a hidden gem, Koh Samui is now a globally recognised
               destination — beautiful, well-connected, and built for living.
               With up to 20% property appreciation projected upon completion and
@@ -103,7 +103,7 @@ const LocationHighlight = () => {
             </div>
 
             {/* --- Mobile-friendly layout --- */}
-            <div className="block md:hidden px-5 pt-0 mt-0">
+            <div className="block lg:hidden px-5 pt-0 mt-0">
               <p className="text-lg font-light text-[#946846] leading-tight font-cabrito text-right">
                 Once a hidden gem, Koh Samui is now a globally recognised
                 destination — beautiful, well-connected, and built for living.
@@ -130,7 +130,7 @@ const LocationHighlight = () => {
             </div>
 
             {/* Decorative block at bottom-left — hidden on mobile */}
-            <div className="hidden md:block absolute left-0 w-[22rem]">
+            <div className="hidden xl:block absolute left-0 w-[22rem]">
               <img
                 src="https://cdn.cosmos.so/85e9c666-aaa3-416d-b562-d8e01c04dc36?format=jpeg"
                 alt="Koh Samui Aerial View"

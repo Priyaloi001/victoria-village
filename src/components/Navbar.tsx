@@ -43,14 +43,14 @@ const Navbar = () => {
         style={{ position: "relative" }}
       >
         {/* Left placeholder for mobile (same width as hamburger) */}
-        <div className="md:hidden w-10 flex-shrink-0" />
+        <div className="hidden w-10 flex-shrink-0" />
 
         {/* Logo */}
         <motion.a
           href="#home"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className={`absolute left-[9rem] transform -translate-x-1/2 md:static md:transform-none flex items-center gap-2 font-serif font-semibold text-xl md:text-2xl transition-colors duration-300 ${
+          className={`absolute  transform -translate-x-1/2 md:static md:transform-none flex items-center gap-2 font-serif font-semibold text-xl md:text-2xl transition-colors duration-300 ${
             scrolled ? "text-primary" : "text-white"
           }`}
           style={{ zIndex: 60 }}
@@ -65,7 +65,7 @@ const Navbar = () => {
         </motion.a>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex flex-grow justify-center">
+        <nav className="hidden lg:flex flex-grow justify-center">
           <motion.ul
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -102,7 +102,7 @@ const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          className={`transition-all duration-300 hidden md:block ${
+          className={`transition-all duration-300 hidden lg:block ${
             scrolled ? "text-primary" : "text-white"
           }`}
         >
@@ -122,8 +122,8 @@ const Navbar = () => {
         <motion.button
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          className={`md:hidden ml-auto w-10 flex-shrink-0 focus:outline-none ${
-            scrolled ? "text-primary" : "text-white"
+          className={`lg:hidden ml-auto  flex-shrink-0 focus:outline-none ${
+            scrolled ? "text-primary" : "text-primary"
           }`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
@@ -140,7 +140,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden backdrop-blur-lg bg-white/10 border-t border-white/20 px-6 pb-4"
+            className="lg:hidden backdrop-blur-lg bg-white/10 border-t border-white/20 px-6 pb-4"
           >
             <nav className="container-custom py-4">
               <ul className="flex flex-col space-y-4">

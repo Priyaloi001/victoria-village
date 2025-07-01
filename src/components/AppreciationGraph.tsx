@@ -143,7 +143,7 @@ const AppreciationGraph = () => {
             </div>
 
             {/* Stat cards with count-up */}
-            <div className="mt-6 grid grid-cols-3 gap-4 text-center mx-auto max-w-full px-2 md:px-0 md:mx-14 md:gap-24 md:grid-cols-3">
+            <div className="mt-6 grid grid-cols-3 gap-4 text-center mx-auto max-w-full px-2 md:px-0 md:mx-14 md:gap-10 xl:gap-24 md:grid-cols-3">
               <div className="bg-[#946847] flex flex-col justify-between p-2 md:p-4 rounded-[0.75rem] md:rounded-[1rem] h-[100px] md:h-auto">
                 <h4 className="font-cabrito text-[#f7e7cd] text-[0.45rem] md:text-[15px] leading-snug">
                   Annual Rental Yield

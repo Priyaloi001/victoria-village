@@ -3,7 +3,7 @@ import React from "react";
 
 const BookingCalendar = () => {
   return (
-    <section id="contact" className="bg-[#f7e7ce] w-full py-10 px-5 md:px-20">
+    <section id="contact" className="bg-[#f7e7ce] w-full py-10 px-0 xl:px-20">
       <style>
         {`
           
@@ -23,8 +23,9 @@ const BookingCalendar = () => {
             }
         `}
       </style>
+      <div className="w-[88vw] mx-auto xl:w-[100vw]">
       {/* Heading: smaller on mobile, large on md+ */}
-      <h2 className="font-cabrito text-[#946847] text-[2.4rem] md:text-[7.5rem] leading-tight md:leading-tight heading">
+      <h2 className="font-cabrito text-[#946847] text-[2.4rem] md:text-[4rem] lg:text-[5rem] xl:text-[7.5rem] leading-tight md:leading-tight heading">
         Secure Your Spot
       </h2>
 
@@ -63,6 +64,7 @@ const BookingCalendar = () => {
             className="rounded-lg"
           ></iframe>
         </div>
+      </div>
       </div>
     </section>
   );

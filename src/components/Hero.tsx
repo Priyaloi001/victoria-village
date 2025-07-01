@@ -23,47 +23,47 @@ const Hero = () => {
           }
 
           @media (max-width: 768px) {
-            .hero-heading {
-              line-height: 1.1;
-              text-align: left !important;
-              white-space: normal;
-              margin-top: 6rem !important;
-              /* Make sure visible */
-              margin-right: 1.3rem;
-              z-index: 30;
-            }
+            // .hero-heading {
+            //   line-height: 1.1;
+            //   text-align: left !important;
+            //   white-space: normal;
+            //   margin-top: 6rem !important;
+            //   /* Make sure visible */
+            //   margin-right: 1.3rem;
+            //   z-index: 30;
+            // }
 
-            .hero-tagline {
-              font-size: 12.4px !important;
-              line-height: 1.3 !important;
-              max-width: 90% !important;
-              margin: 3rem auto 2rem 10.7rem !important;
-              text-align: left !important;
-              position: relative;
-              z-index: 30;
-            }
+            // .hero-tagline {
+            //   font-size: 12.4px !important;
+            //   line-height: 1.3 !important;
+            //   max-width: 90% !important;
+            //   margin: 3rem auto 2rem 10.7rem !important;
+            //   text-align: left !important;
+            //   position: relative;
+            //   z-index: 30;
+            // }
 
-            .scroll-button {
-              margin: 0 auto 3rem 10rem !important;
-              display: flex !important;
-              justify-content: center !important;
-              position: relative;
-              z-index: 30;
-            }
+            // .scroll-button {
+            //   margin: 0 auto 3rem 10rem !important;
+            //   display: flex !important;
+            //   justify-content: center !important;
+            //   position: relative;
+            //   z-index: 30;
+            // }
 
-            .hero-container {
-              bottom: auto !important; /* remove fixed bottom */
-              top: 50% !important;     /* place roughly middle of viewport */
-              left: 50% !important;
-              transform: translate(-50%, -50%) !important; /* center */
-              max-width: 90vw !important;
-              width: 90vw !important;
-              padding: 0 1rem !important;
-              display: flex !important;
-              flex-direction: column !important;
-              align-items: center !important;
-              margin-bottom: 0 !important;
-            }
+            // .hero-container {
+            //   bottom: auto !important; /* remove fixed bottom */
+            //   top: 50% !important;     /* place roughly middle of viewport */
+            //   left: 50% !important;
+            //   transform: translate(-50%, -50%) !important; /* center */
+            //   max-width: 90vw !important;
+            //   width: 90vw !important;
+            //   padding: 0 1rem !important;
+            //   display: flex !important;
+            //   flex-direction: column !important;
+            //   align-items: center !important;
+            //   margin-bottom: 0 !important;
+            // }
 
             /* ONLY MOBILE: adjust image container height for 4:5 ratio */
             .image-container-mobile-ratio {
@@ -89,7 +89,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="absolute mt-[5.6rem] md:mt-[6.2rem] px-5 md:px-20 text-[#946846] text-[2.6rem] md:text-[2.6rem] lg:text-[9.2rem] font-cabrito mb-0 pb-0 z-10 text-left">
+        <h1 className="absolute mt-[5.6rem] md:mt-[6.2rem] px-5 sm:px-10 xl:px-20 text-[#946846] text-[2.6rem] md:text-[4.6rem] lg:text-[90px] xl:text-[9.2rem] font-cabrito mb-0 pb-0 z-10 text-left">
           Victoria Village
         </h1>
       </motion.div>
@@ -109,7 +109,7 @@ const Hero = () => {
       </div>
 
       {/*  Tagline + Scroll */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[23rem]  w-full max-w-[88vw] z-30 mt-0 mt-12 md:mt-4 flex flex-col text-white text-center hero-container">
+      <div className="sm:absolute left-1/2 sm:transform sm:-translate-x-1/2 bottom-10 xl:bottom-[23rem]  w-full sm:max-w-[88vw] z-30 mt-10 sm:mt-12 md:mt-4 flex flex-col text-white text-center hero-container">
         <motion.div
           initial={{ y: 0 }}
           animate={{ y: [0, -18, 0] }}
@@ -125,7 +125,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 10, delay: 0.2 }}
-            className="text-lg md:text-[35px] text-left text-white max-w-2xl mx-auto mt-40 mb-1 me-[11.5rem] font-cabrito hero-tagline"
+            className="text-lg md:text-[35px] text-left text-black sm:text-white max-w-2xl mx-auto sm:mt-40 mb-1 sm:me-[11.5rem] font-cabrito hero-tagline"
           >
             Live where elegance <br />
             meets elevation
@@ -167,7 +167,7 @@ const Hero = () => {
             }}
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            className="flex flex-row mx-auto items-center text-white group focus:outline-none scroll-button mt-24 me-[15rem]"
+            className="flex flex-row mx-auto items-center text-black sm:text-white group focus:outline-none scroll-button sm:mt-24 sm:me-[15rem]"
           >
             <span className="text-[10px] md:text-[30px] group-hover:text-[#E4A861] transition-colors font-cabrito">
               Begin Your Ascent

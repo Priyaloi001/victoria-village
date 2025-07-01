@@ -96,15 +96,15 @@ const VillaShowcase = () => {
             }
         `}
       </style>
-<div className="villas-inner">
+<div className="villas-inner w-[88vw] mx-auto xl:w-[100vw]">
       <motion.h1
         variants={itemVariants}
-        className="section-title px-4 md:px-[4.8rem] 3xl:px-0 font-cabrito text-left text-[3rem] md:text-[7rem] leading-[1.2]"
+        className="section-title px-4 sm:px-0 xl:px-[4.8rem] 3xl:px-0 font-cabrito text-left text-[3rem] lg:text-[5rem] xl:text-[7rem] leading-[1.2]"
       >
-        Experience the Villas fff
+        Experience the Villas
       </motion.h1>
 
-      <div className="container-custom relative z-10 md:ms-0 2xl:px-0">
+      <div className="container-custom relative z-10 xl:ms-0 2xl:px-0 px-0 lg:px-4">
         <motion.div
           ref={ref}
           variants={containerVariants}
@@ -113,7 +113,7 @@ const VillaShowcase = () => {
           className="text-center mb-12"
         ></motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 ">
           {/* Left column */}
           <div className="w-full h-96 md:h-[40rem] md:order-2 ">
             <iframe
@@ -133,7 +133,7 @@ const VillaShowcase = () => {
             {/* Desktop Layout */}
             {!isMobile && (
               <div className=" rounded-lg p-2 sm:p-3 md:p-0 ">
-                <div className="content-div rounded-lg pt-6 md:pt-8 flex items-center justify-center h-full 3xl:block">
+                <div className="content-div rounded-lg pt-6 md:pt-8 flex lg:items-center lg:justify-center h-full">
                   <p className="font-cabrito text-gray-800 text-lg font-light leading-tight text-left max-w-md mx-0 me-6">
                     Immerse yourself in the villa through our interactive 3D
                     experience.
